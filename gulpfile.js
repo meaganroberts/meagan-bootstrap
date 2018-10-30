@@ -4,7 +4,7 @@ var sass        = require('gulp-sass');
 var gutil       = require('gulp-util');
 
 gulp.task('sass', function() {
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss','src/scss/*.scss'])
+    return gulp.src(['src/scss/*.scss'])
         .pipe(sass())
         .on('error', gutil.log)
         .pipe(gulp.dest("docs/css"))
